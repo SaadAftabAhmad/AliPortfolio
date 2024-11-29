@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 
 import Link from "next/link";
+
 import SidebarButton from "../sidebarButton/SidebarButton";
-
-
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -11,7 +10,7 @@ const Navbar = () => {
   const toggleDrawer = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
-  return(
+  return (
     <div className="fixed z-[1022] bg-[#260821] w-full flex items-center justify-between shadow px-14 max-[768px]:px-6 py-5">
       <p className="text-[35px] font-[700] text-white" style={{ textShadow: '2px 2px 5px rgba(16, 229, 234)' }}>SAAD</p>
       <ul className="flex justify-between w-[470px] max-[768px]:w-[430px] text-white text-[20px] font-[500] max-[649px]:hidden">
